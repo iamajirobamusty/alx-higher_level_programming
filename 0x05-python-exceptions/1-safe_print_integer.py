@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 """Print an integer with "{:d}".format().
 
     Args:
