@@ -1,4 +1,5 @@
-^#!/usr/bin/python3
+#!/usr/bin/python3
+
 """
     This module takes in two string arguments and prints formatted
     output.
