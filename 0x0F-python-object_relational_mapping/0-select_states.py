@@ -13,4 +13,6 @@ if __name__ == "__main__":
   result = db_cursor.fetchall()
   for col in result:
     print(col)
-
+  db_cursor.close
+  db_connect.close()
+  
