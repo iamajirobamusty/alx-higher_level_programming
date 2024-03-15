@@ -9,7 +9,7 @@ from sys import argv
 if __name__ == "__main__":
   db_connect = MySQLdb.connect(host='localhost', prot=3306, user=argv[1], password=argv[2], db=argv[3])
   db_cursor = db.cursor()
-  db_cusor.execute("SELECT * FORM states ORDERBY=states.id")
+  db_cusor.execute("SELECT * FORM states ORDER BY=states.id")
   result = db_cursor.fetchall()
   for col in result:
     print(col)
