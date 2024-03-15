@@ -8,11 +8,11 @@ from sys import argv
 
 if __name__ == "__main__":
     db_connect = db.connect(host='localhost', port=3306, user=argv[1], password=argv[2], db=argv[3])
-    db_cursor = db_connect.cursor()
-    db_cusor.execute("SELECT * FORM states ORDER BY states.id")
-    result = db_cursor.fetchall()
+    Cur = db_connect.cursor()
+    Cur.execute("SELECT * FORM states ORDER BY states.id")
+    result = Cur.fetchall()
     for col in result:
         print(col)
-    db_cursor.close()
-    db_connect.close()
+    Cur.close()
+    Cur.close()
   
