@@ -21,4 +21,6 @@ if __name__ == "__main__":
     Cur.execute("SELECT cities.name FROM cities JOIN states ON cities.state_id = states.id WHERE states.name LIKE '%{}' ORDER BY citites.id".format(argv[4]))
     result = Cur.fetchall()
     for row in result:
-      print(row)
+        x = ",".join(row)
+        print(f"{x}, ", end = "")
+      
