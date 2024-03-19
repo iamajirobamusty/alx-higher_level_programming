@@ -18,5 +18,5 @@ if __name__ == "__main__":
     for col in result:
         print(col)
     Cur.close()
-    Cur.close()
+    connection.commit()
   
