@@ -8,15 +8,15 @@ from sys import argv
 
 if __name__ == "__main__":
      """
-    Access to the database and get the states
-    from the database.
-    """
-    db_connect = db.connect(host='localhost', port=3306, user=argv[1], password=argv[2], db=argv[3])
-    Cur = db_connect.cursor()
-    Cur.execute("SELECT * FORM states ORDER BY states.id")
-    result = Cur.fetchall()
-    for col in result:
-        print(col)
-    Cur.close()
-    connection.commit()
+     Access to the database and get the states
+     from the database.
+     """
+     db_connect = db.connect(host='localhost', port=3306, user=argv[1], password=argv[2], db=argv[3])
+     Cur = db_connect.cursor()
+     Cur.execute("SELECT * FORM states ORDER BY states.id")
+     result = Cur.fetchall()
+     for col in result:
+          print(col)
+     Cur.close()
+     connection.commit()
   
