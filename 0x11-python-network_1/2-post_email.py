@@ -13,9 +13,7 @@ import sys
 if __name__ == "__main__":
     url = sys.argv[1]
     email = sys.argv[2]
-    param = {
-        "email": email
-    }
+    param = {"email": email}
     query_string = urllib.parse.urlencode(param)
     data = query_string.encode("ascii")
     req = urllib.request.Request(url, data)
