@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-"""
-script that takes in a URL, sends a request to the URL and displays the
-body of the response (decoded in utf-8).
-You have to manage urllib.error.HTTPError exceptions and
-print: Error code: followed by the HTTP status code.
+"""Sends a request to a given URL and displays the response body.
+Usage: ./3-error_code.py <URL>
+  - Handles HTTP errors.
 """
 import urllib.request
 from urllib.error import HTTPError
