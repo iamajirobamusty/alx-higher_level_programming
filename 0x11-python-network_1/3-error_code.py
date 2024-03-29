@@ -12,13 +12,12 @@ import sys
 
 if __name__ == "__main__":
     url = sys.argv[1]
-    
-    req = urllib.request.Request(url)
+
+    request = urllib.request.Request(url)
     try:
-        with urllib.request.urlopen(req) as response:
-            html = response.read().decode('ascii')
-            print(html)
+        with urllib.request.urlopen(request) as response:
+            print(response.read().decode("ascii"))
     except urllib.error.HTTPError as e:
-        print("Error code: {}".format(e.code))
+        print("Error code: {}".format(e.code)))
     
   
