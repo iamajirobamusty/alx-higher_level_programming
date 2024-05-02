@@ -6,7 +6,7 @@ if (!argv[2] || !parseInt(argv[2])) {
   console.log('Missing size');
 } else {
   for (let itr = argv[2]; itr > 1; itr--) {
-    myVar += "X";
+    myVar += 'X';
   }
   while (argv[2]) {
     console.log(myVar);
